@@ -1,0 +1,9 @@
+@import '/src/styles/variables';
+
+.main {
+	margin-top: var(--header-height);
+	padding: 1.5em 0;
+	@media (max-width: $bp-tablet) {
+		padding: 1em 0;
+	}
+}

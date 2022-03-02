@@ -1,0 +1,20 @@
+.container {
+	min-height: 60px;
+	min-width: 60px;
+	position: relative;
+}
+
+.animationContainer {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	&_overlay {
+		background-color: rgba(#fff, .4);
+	}
+}
+
+.loading {
+	margin: auto;
+}

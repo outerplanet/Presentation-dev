@@ -1,0 +1,28 @@
+@import '/src/styles/variables';
+
+.header {
+	background-color: var(--bg-content);
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	height: var(--header-height);
+}
+
+.logo {
+	font-size: 2em;
+	font-weight: 700;
+	@media (max-width: $bp-tablet) {
+		font-size: 1.8em;
+	}
+	@media (max-width: $bp-mobile-medium) {
+		font-size: 1.6em;
+	}
+	&:hover {
+		opacity: .7;
+	}
+}

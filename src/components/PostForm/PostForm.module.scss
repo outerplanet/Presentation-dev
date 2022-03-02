@@ -1,0 +1,40 @@
+@import '/src/styles/variables';
+
+.form {
+	background-color: var(--bg-content);
+	border-radius: $border-rad-heavy;
+	padding: 1em;
+}
+
+.input {
+	border: $border-primary;
+	border-radius: $border-rad-heavy;
+	max-height: 16em;
+	min-height: 5.5em;
+	padding: 1em;
+	resize: vertical;
+	&:hover {
+		border: $border-primary-hover;
+	}
+}
+
+.error {
+	color: var(--color-error);
+	font-size: .95em;
+	font-weight: 600;
+	padding: .5em;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.count {
+	color: var(--color-text-secondary);
+	padding: .5em;
+}
+
+.button {
+	margin-top: 1em;
+}

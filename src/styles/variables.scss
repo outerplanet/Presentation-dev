@@ -1,0 +1,13 @@
+$border-primary: 1px solid var(--border-color-primary);
+$border-primary-hover: 1px solid var(--color-text-primary-hover);
+
+$border-rad-heavy: .7em;
+$border-rad-light: .35em;
+
+$bp-desktop: 1340px;
+$bp-mobile-large: 767px;
+$bp-mobile-medium: 600px;
+$bp-tablet: 1000px;
+
+$transition-duration: .4s;
+$transition-property: background-color, border, box-shadow, color, fill, opacity, text-shadow, transform;

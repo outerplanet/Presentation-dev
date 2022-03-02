@@ -1,0 +1,30 @@
+.container {
+	display: flex;
+	justify-content: center;
+	margin: 3em;
+	div {
+		animation: loading 1.5s infinite ease-in-out both;
+		background-color: var(--color-primary);
+		border-radius: 50%;
+		height: 1em;
+		width: 1em;
+		&:nth-child(1) {
+			animation-delay: -.32s;
+		}
+		&:nth-child(2) {
+			animation-delay: -.16s;
+		}
+		&:not(:last-child) {
+			margin-right: .4em;
+		}
+	}
+}
+
+@keyframes loading {
+	0%, 80%, 100% {
+		transform: scale(0);
+	}
+	40% {
+		transform: scale(1);
+	}
+}

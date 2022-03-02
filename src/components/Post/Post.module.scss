@@ -1,0 +1,37 @@
+@import '/src/styles/variables';
+
+.container {
+	background-color: var(--bg-content);
+	border-radius: $border-rad-heavy;
+	padding: 1em;
+	&:not(:first-child) {
+		margin-top: 1em;
+	}
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	&_avatar {
+		font-size: 1.5em;
+		@media (max-width: $bp-tablet) {
+			font-size: 1.4em;
+		}
+	}
+	&_time {
+		color: var(--color-text-secondary);
+		margin-left: .7em;
+	}
+	&_delete {
+		font-size: 1.2em;
+		margin: -.5em -.5em -.5em auto;
+		padding: .5em;
+	}
+}
+
+.content {
+	line-height: 1.5;
+	margin-top: .7em;
+	overflow-wrap: anywhere;
+	white-space: pre-wrap;
+}
